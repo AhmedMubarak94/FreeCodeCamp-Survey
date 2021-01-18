@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sansita:wght@800&display=swap');
+
+:root{
+  box-sizing: border-box;
+  --white: hsl(0, 0%, 100%);
+  --darkblue: #1b1b32;
+  --darkblue-alpha: rgba(27, 27, 50, 0.7);
+  --green: #37af65;
+  --gray: hsl(210, 7%, 30%);
+  --light-gray: hsl(210, 17%, 95%);
+  --extra-light-gray: hsl(210, 17%, 98%);
+ 
+
+}
+
+
+*, 
+::before, 
+::after {
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: 
+  linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), 
+  url(survey-form-background.jpeg);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4em;
+}
+
+.container{
+  background-color: var(--darkblue-alpha);
+  padding: 1.4em 2em;
+  margin: 0 auto;
+  max-width: 650px;
+  border-radius: .2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Sansita', sans-serif;
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.header p {
+  letter-spacing: .07em;
+  font-family: 'Sansita';
+}
+
+.form_group_title{
+  margin-bottom: .5em;
+}
+
+
+.form_info input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .7em 1em;
+  font-family: inherit;
+  border-radius: .3em;
+  margin-bottom: .5em;
+}
+
+.form_info input:focus{
+outline: none;
+}
+
+.form_dropdown select{
+  width: 100%;
+  padding: .5em;
+  font-size: 1em;
+  border-radius: .3em;
+  color: var(--gray)
+}
+
+
+select:focus {
+  outline: none;
+}
+
+
+.form_checkboxs {
+  display:flex;
+  flex-direction: column;
+}
+
+.form_textarea{
+  width:100%;
+  max-width: 100%;
+  min-height: 7.5em;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+
+}
+
+.submit_form{
+  width:100%;
+  border: none;
+  padding: 1em;
+  background-color: var(--green);
+  color: var(--white);
+  font-family: "Poppin", sans-serif;
+  font-size: 1rem;
+}
